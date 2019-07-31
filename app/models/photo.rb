@@ -5,3 +5,5 @@ class Photo < ApplicationRecord
 end
 
 
+
+

@@ -146,12 +146,14 @@
 
 
 
-
 <div class="row">
   <% @place.photos.each do |photo| %>
     <div class="col-12 col-sm-6">
       <blockquote>
-        <% if photo.caption.present? %>  
+        <!-- display photo picture with image_tag url-->
+        <%= image_url 'photo.picture.url'%>
+   
+        <% if photo.caption.present? %> 
           <b><%= photo.caption %></b>
         <% end %>
       </blockquote>
