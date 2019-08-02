@@ -7,6 +7,11 @@
     <% if place.user.present? %>
       <small><%= place.user.email %></small>
     <% end %>
+
+    <% place.photos.each do |photo| %>
+      <%= image_tag photo.picture.url.to_s %>
+    <% end %>
+
     <% if place.comments.present?%>
       <div class="col-12">
         <blockquote>
