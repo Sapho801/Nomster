@@ -154,7 +154,7 @@
     <div class="col-12 col-sm-6">
       <blockquote>
         <!-- display photo picture with image_tag url-->
-        <%= image_tag photo.picture.url.to_s %>
+        <%= image_tag photo.picture.url.to_s, width: '800px', height: 'auto' %>
    
         <% if photo.caption.present? %> 
           <b><%= photo.caption %></b>

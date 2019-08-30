@@ -6,17 +6,17 @@
   </ol>
   <div class="carousel-inner" role="listbox">
     <div class="carousel-item active">
-      <%= image_tag 'slider1.jpg', class: 'img-fluid' %>
+      <%= image_tag 'slider1.jpg', class: 'img-fluid', width: '850' %>
       <h3>Goodness, what yeast!</h3>
     </div>
     <div class="carousel-item">
-      <%= image_tag 'slider2.jpg', class: 'img-fluid' %>
+      <%= image_tag 'slider2.jpg', class: 'img-fluid', width: '850' %>
       <div class="carousel-caption d-none d-md-block">
         <h3>Green with envy!</h3>
       </div>
     </div>
     <div class="carousel-item">
-      <%= image_tag 'slider3.jpg', class: 'img-fluid' %>
+      <%= image_tag 'slider3.jpg', class: 'img-fluid', width: '850' %>
       <div class="carousel-caption d-none d-md-block">
         <h3>Fillet me up!</h3>
       </div>
@@ -44,7 +44,7 @@
     <% end %>
 
     <% place.photos.each do |photo| %>
-      <%= image_tag photo.picture.url.to_s %>
+      <%= image_tag photo.picture.url.to_s, width: '850' %>
     <% end %>
 
     <% if place.comments.present?%>
